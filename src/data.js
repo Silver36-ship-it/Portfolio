@@ -58,23 +58,12 @@ export const projects = [
     id: "01",
     name: "Healthpadi",
     description:
-      "A healthcare frontend that helps users discover approximate procedure costs before arriving at hospitals. Built as a product-focused SPA.",
+      "A healthcare app that helps users discover procedure costs before they arrive at the hospital. It combines a polished frontend experience with backend support for data-driven price discovery.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
     live: "https://healthpadi-frontend-ecru.vercel.app/",
     github: "https://github.com/Silver36-ship-it",
     featured: true,
     status: "live",
-  },
-  {
-    id: "02",
-    name: "Task Manager",
-    description:
-      "A full-featured task management app with filtering, local storage persistence, and a custom useLocalStorage hook.",
-    tech: ["React", "Custom Hooks", "Tailwind CSS"],
-    live: null,
-    github: null,
-    featured: false,
-    status: "in-development",
   },
   {
     id: "03",
@@ -83,8 +72,30 @@ export const projects = [
       "A movie discovery app powered by the OMDB API, featuring real-time search, React Query caching, and a clean detail page.",
     tech: ["React", "React Query", "Axios", "React Router"],
     live: null,
-    github: null,
+    github: "https://github.com/Silver36-ship-it",
     featured: false,
     status: "coming-soon",
+  },
+  {
+    id: "04",
+    name: "Buildspace",
+    description:
+      "A UI clone of ArchSaint Nexus — a Nigerian software development and digital solutions company. The design highlights clean landing page structure, product sections, and responsive interaction.",
+    tech: ["React", "Tailwind CSS", "Vite"],
+    live: "https://build-space-arch-saint-clone.vercel.app/",
+    github: "https://github.com/Silver36-ship-it",
+    featured: false,
+    status: "live",
+  },
+  {
+    id: "05",
+    name: "TaskFlow",
+    description:
+      "A modern task workflow app designed to help users manage projects, tasks, and daily priorities with a clear, responsive interface.",
+    tech: ["React", "Tailwind CSS"],
+    live: "https://task-flow-lake-psi.vercel.app/",
+    github: "https://github.com/Silver36-ship-it",
+    featured: false,
+    status: "live",
   },
 ];

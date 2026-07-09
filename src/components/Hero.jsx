@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center px-6 pb-16 pt-28 sm:px-10 lg:px-12">
       <div
-        className={`fade-in ${visible ? "visible" : ""} grid w-full max-w-6xl gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center`}
+        className={`fade-in ${visible ? "visible" : ""} grid w-full max-w-6xl gap-8 lg:grid-cols-1 lg:items-start`}
       >
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-300">
@@ -53,72 +53,78 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-6">
-            <a
-              href={personalInfo.github}
-              target="_blank"
-              rel="noreferrer"
-              className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
-            >
-              GitHub
-            </a>
-            <a
-              href={personalInfo.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
-            >
-              LinkedIn
-            </a>
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
-            >
-              Email
-            </a>
-          </div>
-        </div>
+          <div className="mx-auto w-full max-w-3xl rounded-[1.5rem] border border-slate-800/50 bg-slate-900/30 p-5 shadow-[0_18px_50px_rgba(2,6,23,0.35)] backdrop-blur glass">
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-mono uppercase tracking-[0.3em] text-sky-400">
+                What I bring
+              </p>
+            </div>
 
-        <div className="rounded-[2rem] border border-slate-800/80 bg-slate-900/70 p-7 shadow-[0_25px_70px_rgba(2,6,23,0.4)] backdrop-blur">
-          <p className="text-sm font-mono uppercase tracking-[0.3em] text-sky-400">
-            What I bring
-          </p>
-          <div className="mt-6 space-y-4">
-            <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-              <p className="text-sm font-semibold text-white">
-                Clean, conversion-focused UI
-              </p>
-              <p className="mt-1 text-sm text-slate-400">
-                Interfaces that feel polished, intuitive, and easy to trust.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-              <p className="text-sm font-semibold text-white">
-                Fast and responsive experiences
-              </p>
-              <p className="mt-1 text-sm text-slate-400">
-                Thoughtful performance and modern front-end architecture.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-              <p className="text-sm font-semibold text-white">
-                Problem-first thinking
-              </p>
-              <p className="mt-1 text-sm text-slate-400">
-                Building solutions around real user needs and clear business
-                goals.
-              </p>
-            </div>
-          </div>
+            <div className="mt-5 flex flex-col sm:flex-row gap-4">
+              <div className="flex-1 rounded-xl border border-slate-800/40 bg-slate-950/40 p-3">
+                <p className="text-sm font-semibold text-white">
+                  Clean, conversion-focused UI
+                </p>
+                <p className="mt-1 text-sm text-slate-400">
+                  Interfaces that feel polished, intuitive, and easy to trust.
+                </p>
+              </div>
 
-          <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-            <p className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500">
-              Current focus
-            </p>
-            <p className="mt-2 text-sm text-slate-300">
-              Designing crisp interfaces, fast workflows, and polished web
-              experiences that leave a lasting impression.
-            </p>
+              <div className="flex-1 rounded-xl border border-slate-800/40 bg-slate-950/40 p-3">
+                <p className="text-sm font-semibold text-white">
+                  Fast and responsive experiences
+                </p>
+                <p className="mt-1 text-sm text-slate-400">
+                  Thoughtful performance and modern front-end architecture.
+                </p>
+              </div>
+
+              <div className="flex-1 rounded-xl border border-slate-800/40 bg-slate-950/40 p-3">
+                <p className="text-sm font-semibold text-white">
+                  Problem-first thinking
+                </p>
+                <p className="mt-1 text-sm text-slate-400">
+                  Building solutions around real user needs and clear business
+                  goals.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-5 rounded-xl border border-slate-800/40 bg-slate-950/30 p-3">
+              <p className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500">
+                Current focus
+              </p>
+              <p className="mt-2 text-sm text-slate-300">
+                Designing crisp interfaces, fast workflows, and polished web
+                experiences that leave a lasting impression.
+              </p>
+            </div>
+            <div className="mt-8 flex justify-center">
+              <div className="flex flex-wrap justify-center gap-8">
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={personalInfo.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href={`mailto:${personalInfo.email}`}
+                  className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
+                >
+                  Email
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

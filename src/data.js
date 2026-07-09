@@ -19,8 +19,8 @@ export const personalInfo = {
 };
 
 export const aboutText = [
-  "I'm a Frontend Developer based in Lagos, Nigeria, with a strong eye for clean interfaces and a love for turning complex ideas into simple, beautiful user experiences. My journey started at a coding bootcamp, and I haven't stopped building since.",
-  "My most meaningful project so far is Healthpadi — a platform that makes healthcare more transparent by letting patients know the cost of medical procedures before arriving at the hospital. I believe technology should solve real problems for real people.",
+  "I'm a Frontend Developer based in Lagos, Nigeria, with a strong eye for clean interfaces and a love for turning complex ideas into simple, beautiful user experiences. I trained at Semicolon Africa and graduated from the Federal University of Technology, Owerri (FUTO) with a degree in Petroleum Engineering. My journey started at a coding bootcamp, and I haven't stopped building since.",
+  "My most meaningful project so far is a healthcare platform I helped build — a project that aims to make healthcare more transparent by letting patients discover approximate procedure costs before arriving at the hospital. I believe technology should solve real problems for real people.",
   "I'm actively seeking my first professional frontend role where I can grow, contribute, and build things that matter. If that sounds like a fit, I'd love to hear from you.",
 ];
 
@@ -58,9 +58,9 @@ export const projects = [
     id: "01",
     name: "Healthpadi",
     description:
-      "A healthcare platform bridging the gap between users and hospitals — letting patients discover the cost of medical procedures before arriving, removing financial uncertainty from healthcare decisions in Nigeria.",
-    tech: ["React", "TypeScript", "Django", "Tailwind CSS"],
-    live: null,
+      "A healthcare frontend that helps users discover approximate procedure costs before arriving at hospitals. Built as a product-focused SPA.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    live: "https://healthpadi-frontend-ecru.vercel.app/",
     github: "https://github.com/Silver36-ship-it",
     featured: true,
     status: "live",

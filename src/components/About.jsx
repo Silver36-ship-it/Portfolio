@@ -5,13 +5,13 @@ export default function About() {
     { label: "Focus", value: "Frontend Development" },
     { label: "Location", value: personalInfo.location },
     { label: "Status", value: personalInfo.status },
-    { label: "Education", value: "Bootcamp Grad" },
+    { label: "Education", value: "Semicolon Africa" },
   ];
 
   return (
     <section id="about" className="px-6 py-24 sm:px-10 lg:px-12">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="mb-10">
           <div>
             <p className="mb-2 text-xs font-mono uppercase tracking-[0.35em] text-sky-400">
               01 — About
@@ -19,11 +19,11 @@ export default function About() {
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Who I Am
             </h2>
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-400 sm:text-base">
+              I care deeply about clarity, performance, and creating interfaces
+              that feel effortless to use.
+            </p>
           </div>
-          <p className="max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
-            I care deeply about clarity, performance, and creating interfaces
-            that feel effortless to use.
-          </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -31,15 +31,7 @@ export default function About() {
             <div className="space-y-4">
               {aboutText.map((paragraph, i) => (
                 <p key={i} className="text-base leading-8 text-slate-400">
-                  {paragraph.includes("Healthpadi") ? (
-                    <>
-                      {paragraph.split("Healthpadi")[0]}
-                      <span className="text-sky-400">Healthpadi</span>
-                      {paragraph.split("Healthpadi")[1]}
-                    </>
-                  ) : (
-                    paragraph
-                  )}
+                  {paragraph}
                 </p>
               ))}
             </div>

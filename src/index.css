@@ -56,3 +56,15 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Glassmorphism utility */
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}

@@ -9,7 +9,7 @@ export default function Skills() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 max-w-2xl">
           <p className="mb-2 text-xs font-mono uppercase tracking-[0.35em] text-sky-400">
-            02 — Skills
+            Skills
           </p>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             What I Work With

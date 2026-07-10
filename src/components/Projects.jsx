@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-2 text-xs font-mono uppercase tracking-[0.35em] text-sky-400">
-              03 — Projects
+              Projects
             </p>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               What I&apos;ve Built

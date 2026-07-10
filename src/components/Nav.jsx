@@ -10,6 +10,17 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleHireMeClick = (event) => {
+    event.preventDefault();
+    const contactSection = document.getElementById("contact");
+
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    window.dispatchEvent(new CustomEvent("open-contact-options"));
+  };
+
   return (
     <nav
       className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 sm:px-10 ${
@@ -37,12 +48,13 @@ export default function Nav() {
         ))}
       </div>
 
-      <a
-        href={`mailto:${personalInfo.email}`}
+      <button
+        type="button"
+        onClick={handleHireMeClick}
         className="rounded-full border border-sky-400/30 bg-slate-900/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-sky-300 transition-all hover:bg-sky-400 hover:text-slate-950"
       >
         Hire Me
-      </a>
+      </button>
     </nav>
   );
 }

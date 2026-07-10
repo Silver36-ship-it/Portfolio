@@ -25,7 +25,7 @@ Best regards,
       <div className="mx-auto max-w-4xl">
         <div className="rounded-[2rem] border border-sky-400/20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 p-10 text-center shadow-[0_25px_80px_rgba(14,116,144,0.2)] sm:p-14">
           <p className="mb-2 text-xs font-mono uppercase tracking-[0.35em] text-sky-400">
-            04 — Contact
+            Contact
           </p>
           <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
             Let&apos;s Work Together

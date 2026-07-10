@@ -14,7 +14,7 @@ export default function About() {
         <div className="mb-10">
           <div>
             <p className="mb-2 text-xs font-mono uppercase tracking-[0.35em] text-sky-400">
-              01 — About
+              About
             </p>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Who I Am

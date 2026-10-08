@@ -13,12 +13,18 @@ export default function Contact() {
     };
   }, []);
 
-  const emailLink = `https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=cm&to=${encodeURIComponent(personalInfo.email)}&su=${encodeURIComponent("Hello Chukwuemeka")}&body=${encodeURIComponent(`Hi Chukwuemeka,
+  const emailSubject = "Hello Chukwuemeka";
+  const emailBody = `Hi Chukwuemeka,
 
 I came across your portfolio and would love to connect.
 
 Best regards,
-[Your Name]`)}`;
+[Your Name]`;
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const emailLink = isMobile
+    ? `mailto:${personalInfo.email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+    : `https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=cm&to=${encodeURIComponent(personalInfo.email)}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+  const emailTarget = isMobile ? undefined : "_blank";
 
   return (
     <section id="contact" className="px-6 py-24 sm:px-10 lg:px-12">
@@ -39,7 +45,7 @@ Best regards,
           <div className="mb-10 flex flex-wrap justify-center gap-4">
             <a
               href={emailLink}
-              target="_blank"
+              target={emailTarget}
               rel="noreferrer"
               className="inline-flex rounded-full bg-sky-400 px-7 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-400/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-300 sm:px-10"
             >
@@ -73,7 +79,7 @@ Best regards,
                 </a>
                 <a
                   href={emailLink}
-                  target="_blank"
+                  target={emailTarget}
                   rel="noreferrer"
                   className="rounded-2xl border border-slate-800 bg-slate-900/60 p-3 transition-all duration-300 hover:border-sky-400 hover:bg-slate-900"
                 >
@@ -112,7 +118,7 @@ Best regards,
             </a>
             <a
               href={emailLink}
-              target="_blank"
+              target={emailTarget}
               rel="noreferrer"
               className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
             >

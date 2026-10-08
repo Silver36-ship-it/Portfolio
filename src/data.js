@@ -67,7 +67,7 @@ export const projects = [
     name: "Healthpadi",
     description:
       "A healthcare app that helps users discover procedure costs before they arrive at the hospital. It combines a polished frontend experience with backend support for data-driven price discovery.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
+    tech: ["React", "TypeScript", "Tailwind CSS", "Python", "Django", "MySQL", "Aiven"],
     live: "https://healthpadi-frontend-ecru.vercel.app/",
     github: "https://github.com/Silver36-ship-it",
     featured: true,
@@ -78,7 +78,7 @@ export const projects = [
     name: "POP QUIZ GAME",
     description:
       "A Kahoot-style quiz experience with fast-paced rounds, score tracking, and an engaging multiplayer feel for friendly competition.",
-    tech: ["React", "Tailwind CSS", "Vite"],
+    tech: ["React", "Tailwind CSS", "Vite", "Golang", "PostgreSQL"],
     live: "https://pop-quiz-game-frontend.vercel.app/",
     github: "https://github.com/Silver36-ship-it",
     featured: false,

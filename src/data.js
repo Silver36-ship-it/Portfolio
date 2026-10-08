@@ -9,8 +9,8 @@ export const personalInfo = {
   name: "Chukwuemeka Onuoha",
   firstName: "Chukwuemeka",
   lastName: "Onuoha",
-  title: "Frontend Developer crafting thoughtful digital experiences",
-  bio: "I design and build polished web experiences that feel fast, clear, and memorable — from product interfaces to full-featured applications. Based in Lagos, Nigeria, I love turning ideas into elegant user journeys.",
+  title: "Full-Stack & Mobile App Developer",
+  bio: "I build end-to-end web applications with React, Python, and Django, as well as cross-platform mobile apps with Flutter and Dart. I also work with REST APIs and SQL or MongoDB databases to turn ideas into clear, reliable digital experiences.",
   email: "emycallistus@gmail.com",
   github: "https://github.com/Silver36-ship-it",
   linkedin: "https://linkedin.com/in/chukwuemeka-onuoha-a62a13374",
@@ -20,18 +20,18 @@ export const personalInfo = {
 };
 
 export const aboutText = [
-  "I'm a Frontend Developer based in Lagos, Nigeria, with a strong eye for clean interfaces and a love for turning complex ideas into simple, beautiful user experiences. I trained at Semicolon Africa and graduated from the Federal University of Technology, Owerri (FUTO) with a degree in Petroleum Engineering. My journey started at a coding bootcamp, and I haven't stopped building since.",
+  "I'm a Full-Stack and Mobile App Developer based in Lagos, Nigeria. I build web applications across the stack, from React interfaces to Python and Django backends, and create cross-platform mobile apps with Flutter and Dart. I also work with REST APIs, SQL, and MongoDB. I trained at Semicolon Africa and graduated from the Federal University of Technology, Owerri (FUTO) with a degree in Petroleum Engineering. My journey started at a coding bootcamp, and I haven't stopped building since.",
   "My most meaningful project so far is a healthcare platform I helped build — a project that aims to make healthcare more transparent by letting patients discover approximate procedure costs before arriving at the hospital. I believe technology should solve real problems for real people.",
-  "I'm actively seeking my first professional frontend role where I can grow, contribute, and build things that matter. If that sounds like a fit, I'd love to hear from you.",
+  "I'm looking for an opportunity to grow as a full-stack and mobile app developer, contribute across platforms, and build products that solve real problems. If that sounds like a fit, I'd love to hear from you.",
 ];
 
 export const skillGroups = [
   {
     category: "Languages",
-    skills: ["JavaScript ES6+", "TypeScript", "HTML5", "CSS3"],
+    skills: ["JavaScript ES6+", "TypeScript", "Python", "Dart", "HTML5", "CSS3"],
   },
   {
-    category: "Frameworks & Libraries",
+    category: "Frontend",
     skills: [
       "React",
       "Tailwind CSS",
@@ -42,11 +42,18 @@ export const skillGroups = [
     ],
   },
   {
+    category: "Backend & Databases",
+    skills: ["Django", "REST APIs", "SQL", "MongoDB"],
+  },
+  {
+    category: "Mobile Development",
+    skills: ["Flutter"],
+  },
+  {
     category: "Tools & Concepts",
     skills: [
       "Git",
       "GitHub",
-      "REST APIs",
       "Custom Hooks",
       "Responsive Design",
       "Vite",

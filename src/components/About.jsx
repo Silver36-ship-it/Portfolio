@@ -2,7 +2,7 @@ import { aboutText, personalInfo } from "../data";
 
 export default function About() {
   const infoCards = [
-    { label: "Focus", value: "Frontend Development" },
+    { label: "Focus", value: "Web & Mobile Development" },
     { label: "Location", value: personalInfo.location },
     { label: "Status", value: personalInfo.status },
     { label: "Education", value: "Semicolon Africa" },

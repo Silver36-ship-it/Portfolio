@@ -19,7 +19,7 @@ export default function Hero() {
         className={`fade-in ${visible ? "visible" : ""} grid w-full max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center`}
       >
         <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-300">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-sky-300 sm:tracking-[0.3em]">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             Available for select opportunities
           </div>
@@ -28,7 +28,7 @@ export default function Hero() {
             Hi, I&apos;m
           </p>
 
-          <h1 className="mb-5 text-5xl font-black leading-[0.95] text-white sm:text-6xl lg:text-8xl">
+          <h1 className="mb-5 text-4xl font-black leading-[0.95] text-white sm:text-6xl lg:text-8xl">
             <span className="gradient-text">{personalInfo.firstName}</span>
             <br />
             <span className="text-slate-400">{personalInfo.lastName}.</span>
@@ -79,7 +79,7 @@ export default function Hero() {
                   Fast and responsive experiences
                 </p>
                 <p className="mt-1 text-sm text-slate-400">
-                  Thoughtful performance and modern front-end architecture.
+                  Thoughtful performance across frontend and backend systems.
                 </p>
               </div>
 
@@ -99,8 +99,8 @@ export default function Hero() {
                 Current focus
               </p>
               <p className="mt-2 text-sm text-slate-300">
-                Designing crisp interfaces, fast workflows, and polished web
-                experiences that leave a lasting impression.
+                Building polished web interfaces, cross-platform mobile apps,
+                and reliable APIs that solve real problems.
               </p>
             </div>
             <div className="mt-8 flex justify-center">
@@ -140,11 +140,11 @@ export default function Hero() {
                 <img
                   src={profileImageUrl}
                   alt={`${personalInfo.fullName} portrait`}
-                  className="h-[420px] w-full rounded-[1.5rem] object-cover object-center"
+                  className="h-72 w-full rounded-[1.5rem] object-cover object-center sm:h-[420px]"
                   onError={() => setImageError(true)}
                 />
               ) : (
-                <div className="flex h-[420px] w-full items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 text-6xl font-bold text-slate-100">
+                <div className="flex h-72 w-full items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 text-6xl font-bold text-slate-100 sm:h-[420px]">
                   {personalInfo.firstName.charAt(0)}
                   {personalInfo.lastName.charAt(0)}
                 </div>

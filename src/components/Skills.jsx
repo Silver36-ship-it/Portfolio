@@ -15,12 +15,12 @@ export default function Skills() {
             What I Work With
           </h2>
           <p className="mt-3 text-sm leading-7 text-slate-400 sm:text-base">
-            A blend of modern tools and solid fundamentals that help ship
-            polished products quickly and reliably.
+            The tools and fundamentals I use to build polished web and mobile
+            products quickly and reliably.
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {skillGroups.map((group) => (
             <div
               key={group.category}

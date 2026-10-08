@@ -23,7 +23,7 @@ Best regards,
   return (
     <section id="contact" className="px-6 py-24 sm:px-10 lg:px-12">
       <div className="mx-auto max-w-4xl">
-        <div className="rounded-[2rem] border border-sky-400/20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 p-10 text-center shadow-[0_25px_80px_rgba(14,116,144,0.2)] sm:p-14">
+        <div className="rounded-[2rem] border border-sky-400/20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 p-6 text-center shadow-[0_25px_80px_rgba(14,116,144,0.2)] sm:p-14">
           <p className="mb-2 text-xs font-mono uppercase tracking-[0.35em] text-sky-400">
             Contact
           </p>
@@ -41,14 +41,14 @@ Best regards,
               href={emailLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex rounded-full bg-sky-400 px-10 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-400/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-300"
+              className="inline-flex rounded-full bg-sky-400 px-7 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-400/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-300 sm:px-10"
             >
               Email Me →
             </a>
             <button
               type="button"
               onClick={() => setShowOptions((prev) => !prev)}
-              className="rounded-full border border-slate-700 bg-slate-900/70 px-10 py-4 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-sky-400 hover:text-sky-300"
+              className="rounded-full border border-slate-700 bg-slate-900/70 px-7 py-4 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-sky-400 hover:text-sky-300 sm:px-10"
             >
               Hire Me
             </button>

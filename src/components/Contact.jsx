@@ -13,7 +13,7 @@ export default function Contact() {
     };
   }, []);
 
-  const emailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(personalInfo.email)}&su=${encodeURIComponent("Hello Chukwuemeka")}&body=${encodeURIComponent(`Hi Chukwuemeka,
+  const emailLink = `https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=cm&to=${encodeURIComponent(personalInfo.email)}&su=${encodeURIComponent("Hello Chukwuemeka")}&body=${encodeURIComponent(`Hi Chukwuemeka,
 
 I came across your portfolio and would love to connect.
 
@@ -73,6 +73,8 @@ Best regards,
                 </a>
                 <a
                   href={emailLink}
+                  target="_blank"
+                  rel="noreferrer"
                   className="rounded-2xl border border-slate-800 bg-slate-900/60 p-3 transition-all duration-300 hover:border-sky-400 hover:bg-slate-900"
                 >
                   <p className="text-sm font-semibold text-white">Email</p>
@@ -110,6 +112,8 @@ Best regards,
             </a>
             <a
               href={emailLink}
+              target="_blank"
+              rel="noreferrer"
               className="text-xs font-mono uppercase tracking-[0.3em] text-slate-500 transition-colors hover:text-sky-400"
             >
               Email

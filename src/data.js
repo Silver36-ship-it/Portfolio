@@ -86,6 +86,17 @@ export const projects = [
   },
   {
     id: "03",
+    name: "E-commerce Store",
+    description:
+      "A fashion e-commerce app featuring curated clothing collections, new arrivals, and a smooth product browsing experience to help shoppers find their style.",
+    tech: ["React"],
+    live: "https://e-store-app-first-ever-qjcv.vercel.app/",
+    github: "https://github.com/Silver36-ship-it",
+    featured: false,
+    status: "live",
+  },
+  {
+    id: "04",
     name: "Buildspace",
     description:
       "A UI clone of ArchSaint Nexus — a Nigerian software development and digital solutions company. The design highlights clean landing page structure, product sections, and responsive interaction.",
@@ -96,7 +107,7 @@ export const projects = [
     status: "live",
   },
   {
-    id: "04",
+    id: "05",
     name: "TaskFlow",
     description:
       "A modern task workflow app designed to help users manage projects, tasks, and daily priorities with a clear, responsive interface.",
@@ -107,7 +118,7 @@ export const projects = [
     status: "live",
   },
   {
-    id: "05",
+    id: "06",
     name: "Movie Search",
     description:
       "A movie discovery app powered by the OMDB API, featuring real-time search, React Query caching, and a clean detail page.",
